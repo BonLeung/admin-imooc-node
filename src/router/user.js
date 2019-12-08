@@ -12,7 +12,7 @@ const router = express.Router()
 router.get('/info', function(req, res, next) {
   const decodeResult = decode(req.get('Authorization'))
   if (decodeResult && decodeResult.username) {
-    findUser('admin').then(user => {
+    findUser(decodeResult.username).then(user => {
       if (user) {
         user.roles = [ user.role ]
         new Result(user, '查询用户成功').success(res)
