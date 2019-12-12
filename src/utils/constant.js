@@ -1,5 +1,5 @@
-const UPLOAD_PATH = process.env.NODE_ENV === 'development' ? '/Users/liangweibang/upload/admin-upload-ebook' : ''
-const UPLOAD_URL = process.env.NODE_ENV === 'development' ? 'http://localhost:9000/admin-upload-ebook' : ''
+const UPLOAD_PATH = process.env.NODE_ENV === 'development' ? '/Users/liangweibang/upload/admin-upload-ebook' : '/root/upload/admin-upload-ebook'
+const UPLOAD_URL = process.env.NODE_ENV === 'development' ? 'http://localhost:9000/admin-upload-ebook' : 'http://localhost:9000/admin-upload-ebook'
 
 module.exports = {
   debug: true,
